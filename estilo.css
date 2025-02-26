@@ -20,16 +20,8 @@ body {
     overflow-x: hidden;
 }
 
-header{
-    background:
-        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-        linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-        linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-        linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-        linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-        linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-        background-color: #131313;
-        background-size: 20px 20px;
+header{    
+    background: linear-gradient(to right, rgba(19, 19, 19, 1), rgba(60, 56, 0, 1));
     width: 100%;
     height: 60px;
     display: flex;
@@ -38,7 +30,6 @@ header{
     justify-content: space-between;
     padding: 10px;
     top: 0;
-
 }
 
 nav{
@@ -97,9 +88,9 @@ section{
 }
 
 .button:hover{
-    font-size: 25px;
-    font-weight: 500;
-    box-shadow: 3px 1px 5px #cabd02;
+    font-size: 21px;
+    font-weight: 400;
+    box-shadow: 2px 1px 5px #cabd02;
 }
 
 #Sobre{
@@ -221,7 +212,7 @@ ul:hover li img:hover {
 }
 
 #Contato{
-    background-color:#dcd67a;
+    background-color:#f9f695;
     margin: 0;
     text-align: center;
     display: flex;
@@ -240,7 +231,7 @@ ul:hover li img:hover {
 
 .contato-container {
     display: flex;
-    justify-content: space-around; /* Distribui os elementos */
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     max-width: 1200px;
@@ -248,7 +239,7 @@ ul:hover li img:hover {
     padding: 10px;
 }
 
-.redes-sociais{
+.Contato{
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -259,31 +250,64 @@ ul:hover li img:hover {
 
 }
 
-.redes-sociais p{
+.Contato p{
     font-size: 40px;
     margin: 20px;
     justify-content: top ;
 }
 
-.redes-sociais i{
-    font-size: 25px;
-
+.itens-contato{
+    display: inline-flex;
 }
 
-.whatsapp{
-    width: 400px;
+.item-contato{
+    background-color: rgb(213, 210, 130);
+    margin: 10px;
+    width: 180px;
+    height: 150px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border-top-left-radius: 30px;
+    position: relative;
 }
 
-.instagram{
-    width: 400px;
+.item-contato a {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
 }
 
-.instagram a {
-    text-transform: lowercase !important;
-    font-variant: small-caps;
+.item-contato::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    background-image: linear-gradient(90deg, #332f00 0%, #6d6600 92.32%);
+    bottom: -0.1rem;
+    left: 0;
+}
+
+.item-contato:hover{
+    width: 182px;
+    height: 152px;
+}
+
+.item-contato i{
+    font-size: 35px;
+    margin-bottom: 2px;
+}
+
+.item-contato p{
+    margin: 2px;
+    font-size: 20px;
 }
 
 .Localizacao{
