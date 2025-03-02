@@ -21,7 +21,9 @@ body {
 }
 
 header{    
-    background: linear-gradient(to right, rgba(19, 19, 19, 1), rgba(60, 56, 0, 1));
+
+    background-color: #131313;
+    background-size: 20px 20px;
     width: 100%;
     height: 60px;
     display: flex;
@@ -90,7 +92,7 @@ section{
 .button:hover{
     font-size: 21px;
     font-weight: 400;
-    box-shadow: 2px 1px 5px #cabd02;
+    transition: 0.15s;
 }
 
 #Sobre{
